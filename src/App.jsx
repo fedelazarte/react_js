@@ -3,10 +3,12 @@ import NavbarComponent from './components/navbar/';
 
 
 
+
 function App() {
   return (
    <>
    <NavbarComponent/>
+   
 
 
    </>
