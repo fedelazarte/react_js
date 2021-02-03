@@ -1,7 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './cartWidget';
-import ItemListContainer from './ItemListContainer';
+import ItemListContainer from '../../containers/ItemListContainer';
 
 
 function NavbarComponent() {
@@ -9,7 +9,7 @@ function NavbarComponent() {
    <>
    
    <h1> Gin entre amigos</h1>
-   <CartWidget/> <ItemListContainer/>
+   <CartWidget/> 
    <h4 style={{color:'grey'}}>Variedades de productos:</h4>
    <table>
    <tr><a href="#">Clásico</a></tr>
