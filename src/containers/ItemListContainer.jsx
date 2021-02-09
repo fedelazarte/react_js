@@ -1,10 +1,32 @@
+import * as React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import productList from "./mocks/productList"
+import ItemList from "../components/ItemList";
+
+
 
 const ItemListContainer = ({greeting}) => {
-  return (
-    <a className="h1" href="#">{greeting}</a>
-  )
+  const [products, setProducts] = React.useState([]);
+
+  React.useEffect (() => {
+  const myPromise = new Promise ((resolve, reject) => {
+    setTimeout(() => resolve (productList), 3000);
+  });
+
+  myPromise.then((result) => setProducts(result))
+  }, []);
+
+return (
+    <div>
+      <a className="h1" href="#">{greeting}</a>
+    <ItemList products = {products}/> 
+    </div>
+    
+
+  );
+  
 }
 
-export default ItemListContainer
+
+export default ItemListContainer;
 
