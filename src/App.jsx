@@ -9,8 +9,8 @@ import ItemListContainer from './containers/ItemListContainer';
 function App() {
   return (
    <>
-   <ItemListContainer greeting={"¡Bienvenidos a una nueva experiencia en Gin!"}/>
    <NavbarComponent/>
+   <ItemListContainer greeting={"¡Bienvenidos a una nueva experiencia en Gin!"}/>
    <ItemCount/>
    
    
