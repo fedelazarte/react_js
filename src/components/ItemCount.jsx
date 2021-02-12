@@ -6,7 +6,7 @@ import React, {useState} from 'react';
 const ItemCount = () => {
     const [carrito, setCarrito] = useState(0);
     const min = 0;
-    const max = 10;
+    const max = 20;
   return (
    <>
    <button onClick={() =>{
