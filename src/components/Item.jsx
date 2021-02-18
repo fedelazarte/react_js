@@ -1,7 +1,9 @@
+import './Item.css';
+
 const Item = ({product}) => {
     return(
-        <div>
-            <h3>{product.title}</h3>
+        <div className='items'>
+            <h4>{product.title}</h4>
             <h5><em>{product.description}</em></h5>
             <ul>
                 <li>Precio: {product.price}</li>

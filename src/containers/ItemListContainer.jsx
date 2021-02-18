@@ -5,6 +5,7 @@ import ItemList from "../components/ItemList";
 
 
 
+
 const ItemListContainer = ({greeting}) => {
   const [products, setProducts] = React.useState([]);
 
@@ -19,7 +20,7 @@ const ItemListContainer = ({greeting}) => {
 return (
     <div>
       <a className="h1" href="#">{greeting}</a>
-    <ItemList products = {products}/> 
+    <ItemList className='itemListCont' products = {products}/> 
     </div>
     
 
