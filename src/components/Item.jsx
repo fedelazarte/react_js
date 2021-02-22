@@ -1,16 +1,16 @@
 import './Item.css';
+import ItemCount from './ItemCount';
+import {NavLink} from 'react-router-dom';
+
 
 const Item = ({product}) => {
     return(
-        <div className='items'>
-            <h4>{product.title}</h4>
-            <h5><em>{product.description}</em></h5>
-            <ul>
-                <li>Precio: {product.price}</li>
-                <li>Stock: {product.stock}</li>
-            </ul>
-
-
+        <div className='col'>
+            <NavLink to={`/productos/${product.id}`} activeClassName='selected'><td><h4>{product.title}</h4></td></NavLink><td><h4>{product.title}</h4></td>
+            <th><h5><em>{product.description}</em></h5></th>
+            <th>Precio: {product.price}</th>
+            <th>Stock: {product.stock}</th>
+            <th><ItemCount/></th>
         </div>
     )
 }

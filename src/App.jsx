@@ -4,10 +4,12 @@ import NavbarComponent from './components/navbar/';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer';
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import './App.css'
 import fondo from './images/bg-picture.jpg'
+import ContactoContainer from './components/ContactoContainer';
+import products from './containers/mocks/productList';
 
 
 
@@ -24,16 +26,15 @@ function App() {
    <Route exact path='/productos'>
    <ItemListContainer/>
    </Route>
-   <Route exact path='/detalle'>
-   <ItemDetailContainer/>
+   <Route exact path='/productos/:productosId'>
+   <ContactoContainer/>
    </Route>
    </Switch>
    <footer className='redir'>
-    <Link to={'/'} className='link0'>Inicio</Link>
+   
      <br/>
-     <Link to={'/productos'} className='link1'>Ver Productos</Link>
+     
      <br/>
-     <Link to={'/detalle'} className='link2'>Ver Detalle</Link>
    </footer>
   
    </BrowserRouter>

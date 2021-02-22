@@ -2,6 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './cartWidget';
 import './navbar.css'
+import {Link} from 'react-router-dom';
 import ItemListContainer from '../../containers/ItemListContainer';
 
 
@@ -9,7 +10,7 @@ function NavbarComponent() {
   return (
    <>
    <div style={{display:'flex', justifyContent:'space-around'}}>
-   <h1 style={{marginLeft:'-300px'}} className='title'> Gin entre amigos</h1>
+   <Link to={'/'} className='link0'><h1 style={{marginLeft:'-300px'}} className='title'> Gin entre amigos</h1></Link>
    <CartWidget/>
    </div>
    
@@ -22,7 +23,7 @@ function NavbarComponent() {
    </table> */}
    <div  style={{display:'flex', justifyContent:'space-around'}}>
      <a href="#" className='menu0'>Conocenos</a>
-     <a href="#" className='menu1'>Compranos</a>
+     <Link to={'/productos'} className='link1'><a href="#" className='menu1'>Compranos</a></Link>
      <a href="#" className='menu2'>Contactanos</a>
    </div>
 

@@ -2,6 +2,7 @@ import * as React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import productList from "./mocks/productList"
 import ItemList from "../components/ItemList";
+import ItemCount from "../components/ItemCount";
 
 
 

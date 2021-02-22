@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ItemCount from '../components/ItemCount'
 import ItemDetail from '../components/ItemDetail'
 
 
@@ -35,7 +36,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
-           <ItemDetail product={product}/> 
+           <ItemDetail product={product}/>
         </div>
     )
 }
